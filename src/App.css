@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #29323C;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    border: solid 2px rgb(155, 243, 236);
+    border-radius: 20px;
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    background:  linear-gradient(90deg, #29323C 0%, #485563 100%) ; 
+    margin: 30px;
+    color:#16D9E3;
+    font-size: 2rem;
+}
+
+.card:active {
+    cursor: grabbing;
+}
+
+.hover {
+    /* background: #8efa84; */
+    box-shadow: 9px 9px 9px rgb(155, 243, 236);
+   
+  }
+  .hold {
+    background: #a221ec;
+    border: solid 1px  #080007;
+    box-shadow: 4px 4px 9px rgba(248, 220, 248, 0.36);
+    color:#000;
+  }
+  .drorred {
+   background: linear-gradient(90deg, #29323C 0%, #485563 100%) ;
+   
+   
+  }
+
+  .leave {
+    background: linear-gradient(90deg, #29323C 0%, #485563 100%) ;; 
+  }
+
+
+
+
+
+
+

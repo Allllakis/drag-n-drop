@@ -1,62 +1,81 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #66af9d;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Kaushan Script", cursive;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  color: #485563;
+  text-shadow: 0 1px 0 #cac8c8, 0 2px 0 #c7c5c5, 0 3px 0 #bbbaba,
+    0 4px 0 #b7b6b6, 0 5px 0 #a9a6a6, 0 9px 1px rgba(0, 0, 0, 0.2),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+    0 3px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.1);
+}
 .box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #29323C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #29323C; */
+  /* background:  #8C2149; */
+  /* background: #EE8A9E; */
+  /* background: #66AF9D; */
 }
 
 .card {
-    width: 200px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: grab;
-    border: solid 2px rgb(155, 243, 236);
-    border-radius: 20px;
-    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-    background:  linear-gradient(90deg, #29323C 0%, #485563 100%) ; 
-    margin: 30px;
-    color:#16D9E3;
-    font-size: 2rem;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  border: solid 2px rgb(155, 243, 236);
+  border-radius: 20px;
+ 
+  box-shadow: 0 1px 4px rgb(119, 119, 119),
+    -23px 0 20px -23px rgba(66, 65, 65, 0.8),
+    23px 0 20px -23px rgba(77, 76, 76, 0.8),
+    0 0 40px rgba(243, 235, 235, 0.1) inset;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  margin: 30px;
+  color: #16d9e3;
+  font-size: 2rem;
 }
 
 .card:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 .hover {
-    /* background: #8efa84; */
-    box-shadow: 9px 9px 9px rgb(155, 243, 236);
-   
-  }
-  .hold {
-    background: #a221ec;
-    border: solid 1px  #080007;
-    box-shadow: 4px 4px 9px rgba(248, 220, 248, 0.36);
-    color:#000;
-  }
-  .drorred {
-   background: linear-gradient(90deg, #29323C 0%, #485563 100%) ;
-   
-   
-  }
+  color: #29323c;
+  background: rgb(118, 145, 145);
 
-  .leave {
-    background: linear-gradient(90deg, #29323C 0%, #485563 100%) ;; 
-  }
+  border: dashed 2px rgb(155, 243, 236);
+}
+.hold {
+  opacity: 1;
+  background: #50057e;
+  border: solid 1px #080007;
+  color: #000;
+}
+.drorred {
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}
 
-
-
-
-
-
-
+.leave {
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}

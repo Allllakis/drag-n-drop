@@ -58,7 +58,10 @@ function App() {
     }
   };
   return (
+    <div className="wrap"> 
+      <h1>Drag the card</h1>
     <div className="box">
+      
       {cardList.sort(sortCard).map((card) => (
         <div
           className="card"
@@ -72,6 +75,7 @@ function App() {
           {card.text}
         </div>
       ))}
+    </div>
     </div>
   );
 }
